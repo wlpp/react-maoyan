@@ -1,0 +1,192 @@
+.movie-warp {
+  width: 100%;
+  min-width: 1200px;
+  margin: 80px auto 0;
+}
+.movie-warp .subbox {
+  background-color: #47464a;
+  height: 60px;
+  width: 100%;
+  min-width: 1200px;
+}
+.movie-warp .subbox .subnav {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.movie-warp .subbox li {
+  display: inline-block;
+  font-size: 16px;
+  color: #999;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+  position: relative;
+  cursor: pointer;
+}
+.movie-warp .subbox .active {
+  color: #ef4238;
+}
+.movie-warp .subbox .active::before {
+  content: "";
+  width: 2px;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: 53px;
+  border-bottom: 7px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: none;
+}
+.movie-warp .tagsbox {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+  padding: 10px 20px;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.movie-warp .tagsbox .tag-title {
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 14px;
+}
+.movie-warp .tagsbox li {
+  padding: 3px 10px;
+  border-radius: 14px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 12px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.movie-warp .tagsbox .fl-active {
+  background: #f34d41;
+  color: #fff;
+  border-radius: 30px;
+}
+.movie-warp .movies-box {
+  width: 1200px;
+  min-height: 700px;
+  margin: 30px auto 0;
+}
+.movie-warp .movies-box .sort-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+.movie-warp .movies-box .sort-box li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.movie-warp .movies-box .sort-box li::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.movie-warp .movies-box .sort-box .st-active::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border: 5px solid #f34d41;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.movie-warp .movies-box .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-warp .movies-box .content .item {
+  width: 175px;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+.movie-warp .movies-box .content .item:nth-of-type(6n) {
+  margin-right: 0;
+}
+.movie-warp .movies-box .content .item:hover {
+  box-shadow: 0 0 8px #fff, 7px 7px 15px rgba(0, 0, 0, 0.07);
+}
+.movie-warp .movies-box .content .item a {
+  display: block;
+}
+.movie-warp .movies-box .content .item-img {
+  width: 175px;
+  height: 225px;
+  position: relative;
+}
+.movie-warp .movies-box .content .item-img img {
+  width: 100%;
+  height: 100%;
+}
+.movie-warp .movies-box .content .item-img .label {
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  width: 69px;
+  height: 25px;
+  background: url('../../assets//images//3d.png') no-repeat;
+  background-size: contain;
+}
+.movie-warp .movies-box .content .item-img .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets//images//mask.png') repeat-x bottom;
+}
+.movie-warp .movies-box .content .item-img .info {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11;
+  transform: translateX(-50%);
+}
+.movie-warp .movies-box .content .item-img .info .score {
+  color: #ffb400;
+  font-size: 18px;
+  font-style: italic;
+}
+.movie-warp .movies-box .content .item-img .info .score em {
+  font-size: 14px;
+  font-style: italic;
+}
+.movie-warp .movies-box .content .name,
+.movie-warp .movies-box .content .msg {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.movie-warp .movies-box .content .msg {
+  color: #ffb400;
+  font-size: 18px;
+}
+.movie-warp .movies-box .content .item-sorce {
+  color: #ffb400;
+  font-size: 16px;
+}

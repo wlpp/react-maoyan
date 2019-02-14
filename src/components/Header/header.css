@@ -1,0 +1,193 @@
+.header {
+  width: 100%;
+  min-width: 1200px;
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header-inner {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.header-inner .logo {
+  display: inline-block;
+  width: 133px;
+  height: 100%;
+  background: url('../../assets/images/logo.png') no-repeat 0;
+  background-size: contain;
+}
+.header-inner .nav {
+  margin: 0 55px;
+}
+.header-inner li {
+  display: inline-block;
+}
+.header-inner .nav-item {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  background-color: #ffffff;
+}
+.header-inner .active {
+  color: #fff;
+  background-color: #ef4238;
+}
+.header-inner .download {
+  width: 132px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.header-inner .download .phone {
+  display: inline-block;
+  width: 15px;
+  height: 24px;
+  background: url('../../assets//images//download.png') no-repeat 0;
+  background-size: contain;
+}
+.header-inner .download .el-icon-caret-top {
+  font-size: 12px;
+  transform: rotate(180deg);
+}
+.header-inner .download span {
+  margin: 0 7px;
+}
+.header-inner .download:hover .popup {
+  display: block;
+}
+.header-inner .download:hover .el-icon-caret-top {
+  transition: all .3s linear;
+  transform: rotate(0deg);
+}
+.header-inner .download .popup {
+  display: none;
+  width: 100%;
+  height: 165px;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  background: #fff;
+  border: 1px solid #dcd4d7;
+  border-top: none;
+  box-sizing: border-box;
+}
+.header-inner .download .popup .app-link {
+  width: 82px;
+  height: 82px;
+  background: url('../../assets/images/app-link.png') no-repeat;
+  background-size: cover;
+  margin: 15px auto;
+}
+.header-inner .download .popup p {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.header-inner .download .popup p:nth-of-type(2) {
+  color: #999;
+  margin-top: 3px;
+}
+.header-inner .search {
+  width: 260px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #faf8fa;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.header-inner .search input {
+  width: 83%;
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: #faf8fa;
+}
+.header-inner .search input:-webkit-input-placeholder {
+  color: #ADD8E6;
+}
+.header-inner .search .el-icon-search {
+  width: 40px;
+  height: 40px;
+  background-color: #ef4238;
+  border-radius: 50%;
+  font-size: 23px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.header-inner .login {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+.header-inner .login .userImg {
+  width: 40px;
+  height: 40px;
+  background: url('../../assets//images/user.png') no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+}
+.header-inner .login .userName {
+  font-size: 12px;
+  width: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.header-inner .login .userName p {
+  color: #ff0000;
+}
+.header-inner .login .el-icon-caret-top {
+  font-size: 12px;
+  transform: rotate(180deg);
+  margin-left: 5px;
+}
+.header-inner .login:hover .popup {
+  display: block;
+}
+.header-inner .login:hover .el-icon-caret-top {
+  transition: all .3s linear;
+  transform: rotate(0deg);
+}
+.header-inner .login .popup {
+  display: none;
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  border: 1px solid #dcd4d7;
+  border-top: none;
+  box-sizing: border-box;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+}
+.header-inner .login .popup a,
+.header-inner .login .popup span {
+  color: #999;
+  cursor: pointer;
+}

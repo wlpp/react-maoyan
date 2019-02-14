@@ -1,0 +1,393 @@
+.detail-warp{
+    .container{
+        margin: 81px auto 0;
+    }
+    .banner{
+        width: 100%;
+        height: 376px;
+        min-width: 1200px;
+        background: #392f59 url('../../assets//images//banner.png') no-repeat 50%;
+        .warper{
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            // align-items: flex-start;
+        }
+        .img{
+            padding-top: 70px;
+            width: 232px;
+            height:322px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+            margin: 0 30px;
+            img{
+                border: 4px solid #fff; 
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .con{
+            padding-top: 70px;
+            font-size: 14px;
+            color: #fff;
+            .c_name{
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 32px;
+            }
+            p{
+                margin: 18px 0;
+                line-height: 100%;
+            }
+            .e_name{
+                font-size: 18px;
+                line-height: 0.3;
+                margin-bottom: 14px;
+            }
+            .btn-buy,.btn-score{
+                width: 272px;
+                height: 40px;
+                font-size: 16px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 2px;
+                padding: 0;
+                border-radius: 2px;
+
+            }
+            .btn-buy{
+                background-color: #df2d2d;
+                cursor: pointer;
+            }
+            .btn-score{
+                background-color: #756189;
+            }
+            .el-rate{
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+            .el-rate__icon{
+                font-size: 20px;
+            }
+            .el-rate__text{
+                color: #fff!important;
+            }
+        }
+        .data{
+            padding-top: 70px;
+            margin-left: 25px;
+            font-size: 30px;
+            color: #ffc600;
+            .sorce{
+                display: block;
+                font-size: 14px;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            .el-rate{
+                line-height: 0!important;
+                margin-bottom: 20px;
+            }
+            .el-rate__text{
+                font-size: 30px;
+                color: #ffc600!important;
+            }
+            p{
+                font-size: 30px;
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+    .main{
+        width: 1200px;
+        margin: 88px auto 0;
+        .tab{
+            font-size: 0;
+            border-bottom: 2px solid #eee;
+            box-sizing: border-box;
+            li{
+                display: inline-block;
+                font-size: 18px;
+                margin-right: 30px;
+                padding-bottom: 10px;
+                cursor: pointer;
+            }
+            .active{
+                color: #ef4238;
+                border-bottom: 2px solid #ef4238;
+            }
+        }
+        .tab-content{
+            margin-top: 40px;
+            .title{
+                font-weight: 400;
+                font-size: 18px;
+                color: #333;
+                line-height: 18px;
+                height: 18px;
+                margin-bottom: 20px;
+                position: relative;
+                display: flex;
+                // justify-content: space-between;
+                &::before{
+                    content: '';
+                    // display: block;
+                    float: left;
+                    height: 100%;
+                    width: 4px;
+                    margin-right: 6px;
+                    background-color: #ef4238;
+                }
+                &::after{
+                    content:"."; 
+                    display:block; 
+                    height:0; 
+                    visibility:hidden; 
+                    clear:both; 
+                }
+                .more{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #999;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateX(-50%);
+                    i{
+                        font-size: 12px;
+                    }
+                }
+                .btn-write{
+                    cursor: pointer;
+                    position: absolute;
+                    top: -10px;
+                    right: 0;
+                    display: block;
+                    height: 30px;
+                    padding: 0 10px;
+                    border-radius: 15px;
+                    border: 1px solid #ef4238;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #ef4238;
+                    z-index: 10;
+                }
+            }
+            .tab-des{
+                .con{
+                    margin-bottom: 60px;
+                }
+                .con-base{
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+                .con-people{
+                    display: flex;
+                    .celebrity-type{
+                        margin-bottom: 16px;
+                        font-size: 16px;
+                    }
+                    .celebrity-item{
+                        margin-right: 20px;
+                        display: inline-block;
+                        width: 135px;
+                        .img{
+                            width: 135px;
+                            height: 196px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 1.4;
+                        text-align: center;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .name{
+                        margin-top: 8px;
+                    }
+                    .s_name{
+                        font-size: 14px;
+                        color: #666;
+                    }
+                }
+                .con-img{
+                    display: flex;
+                    .bigImg{
+                        width: 465px;
+                        height: 320px;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 98%;
+                        }
+                        a{
+                            display: block;
+                            width: 66px;
+                            height: 66px;
+                            background: url('../../assets//images//play-black.png') no-repeat;
+                            background-size: contain;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                            cursor: pointer;
+                        }
+                    }
+                    .smallImg{
+                        font-size: 0;
+                        flex: 1;
+                        overflow: hidden;
+                        li{
+                            display: inline-block;
+                            width: 176px;
+                            height: 99px;
+                            margin-left: 6px;
+                            margin-bottom: 8px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .con-comment{
+                    .item{
+                        display: flex;
+                        align-items: flex-start;
+                        font-size: 15px;
+                        margin-bottom: 20px;
+                    }
+                    .img{
+                        width: 50px;
+                        height: 50px;
+                        img{
+                            // width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .info{
+                        margin-left: 20px;
+                    }
+                    .data{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 5px;
+                    }
+                    .sroce{
+                        display: flex;
+                        align-items: center;
+                        // justify-content: space-between;
+                        .time{
+                            color: #999;
+                        }
+                    }
+                    .zang{
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        color: #999;
+                        cursor: pointer;
+                        i{
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            background: url('../../assets//images//zang.png') no-repeat;
+                            background-size: contain;
+                            margin-right: 5px;
+                        }
+                    }
+                    .comment{
+                        padding: 10px 0;
+                        border-bottom: 1px solid #e5e5e5;
+                        color: #666;
+                        line-height: 26px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .tab-people{
+                .celebrity-group{
+                    margin-bottom: 40px;
+                }
+                .celebrity-type{
+                    margin-bottom: 16px;
+                    font-size: 16px;
+                    color: #999;
+                    span{
+                        color: #333;
+                        margin-right: 5px;
+                    }
+                }
+                .celebrity-list{
+                    .item{    
+                        width: 135px;
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+                    .img{
+                        width: 135px;
+                        height: 196px;
+                        margin-bottom: 10px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 1.4;
+                    text-align: center;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .name{
+                    margin-top: 8px;
+                }
+                .s_name{
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+            .tab-image{
+                .content{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    img{
+                        width: 136px;
+                        height: 136px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .tab-none{
+                display: none;
+            }
+            .tab-show{
+                display: block
+            }
+        }
+    }
+}
